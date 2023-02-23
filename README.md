@@ -1,6 +1,6 @@
 # todos-express-starter-mailchain
 
-This is the end result of the [Sign-in with Mailchain using Passport tutorial](https://docs.mailchain.com/developer/tutorials/integrations/passport-magic-link-tutorial/).
+This is the end result of the [Passport Magic Links with Mailchain tutorial](https://docs.mailchain.com/developer/tutorials/integrations/passport-magic-link-tutorial/).
 
 The app a starter kit for building a todo app with sign in with Mailchain functionality using
 [Express](https://expressjs.com/), [Passport](https://www.passportjs.org/), [Mailchain SDK](https://www.npmjs.com/package/@mailchain/sdk) and
