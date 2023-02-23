@@ -1,40 +1,17 @@
-# todos-express-starter
+# todos-express-starter-mailchain
 
-This is a starter kit for building a todo app with sign in functionality using
-[Express](https://expressjs.com/), [Passport](https://www.passportjs.org/) and
+This is the end result of the [Sign-in with Mailchain using Passport tutorial](https://docs.mailchain.com/developer/tutorials/integrations/passport-magic-link-tutorial/).
+
+The app a starter kit for building a todo app with sign in with Mailchain functionality using
+[Express](https://expressjs.com/), [Passport](https://www.passportjs.org/), [Mailchain SDK](https://www.npmjs.com/package/@mailchain/sdk) and
 [SQLite](https://www.sqlite.org/).
 
-The following is a list of complete, working example apps that have been built
-using this kit as a starting point.
+Sign-in with Mailchain features support:
+- Sign in with a Mailchain address
+- Sign in with Ethereum (without requiring a signature)
+- Sign in with ENS (without requiring a signature)
 
-* [todos-express-password](https://github.com/passport/todos-express-password)
-
-  Illustrates how to sign in with a username and password.
-
-* [todos-express-password-flash](https://github.com/passport/todos-express-password-flash)
-
-  Illustrates how to sign in with a username and password and use the flash for
-  informative messages.
-
-* [todos-express-google](https://github.com/passport/todos-express-google)
-
-  Illustrates how to sign in with Google via OpenID Connect.
-
-* [todos-express-google-oauth2](https://github.com/passport/todos-express-google-oauth2)
-
-  Illustrates how to sign in with Google via OAuth 2.0.
-
-* [todos-express-email](https://github.com/passport/todos-express-email)
-
-  Illustrates how to sign in with email via magic link.
-
-* [todos-express-auth0](https://github.com/passport/todos-express-auth0)
-
-  Illustrates how to implement sign in by integrating with Auth0 via OpenID Connect.
-
-* [todos-express-openidconnect](https://github.com/passport/todos-express-openidconnect)
-
-  Illustrates how to implement sign in by integrating with an identity provider (IdP) via OpenID Connect.
+Check out the tutorial https://docs.mailchain.com/developer/tutorials/integrations/passport-magic-link-tutorial/.
 
 ## License
 
@@ -43,3 +20,5 @@ using this kit as a starting point.
 ## Credit
 
 Created by [Jared Hanson](https://www.jaredhanson.me/)
+
+Adapted by [Mailchain](https://mailchain.com)

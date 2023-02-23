@@ -14,6 +14,8 @@ db.serialize(function() {
     hashed_password BLOB, \
     salt BLOB, \
     name TEXT, \
+    mailchain_address TEXT UNIQUE, \
+    mailchain_address_verified INTEGER, \
     email TEXT UNIQUE, \
     email_verified INTEGER \
   )");

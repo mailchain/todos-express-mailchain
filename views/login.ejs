@@ -12,6 +12,21 @@
 		<section class="prompt">
 			<h3>todos</h3>
 			<h1>Sign in</h1>
+			<form action="/login/mailchain" method="post">
+				<section>
+					<label for="mailchain_address">Mailchain Address or ENS Name</label>
+					<input
+						id="mailchain_address"
+						name="mailchain_address"
+						type="text"
+						autocomplete="username"
+						placeholder="...@mailchain.com or ensname.eth"
+						required
+						autofocus
+					/>
+				</section>
+				<button type="submit">Sign in with Mailchain</button>
+			</form>
 			<hr>
 			<p class="help">Don't have an account? <a href="/signup">Sign up</a></p>
 		</section>

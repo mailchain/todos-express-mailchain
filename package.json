@@ -7,38 +7,38 @@
     "example",
     "express",
     "passport",
-    "sqlite"
+    "sqlite",
+    "mailchain"
   ],
   "author": {
-    "name": "Jared Hanson",
-    "email": "jaredhanson@gmail.com",
-    "url": "https://www.jaredhanson.me/"
+    "name": "Tim Boeckmann"
   },
-  "homepage": "https://github.com/passport/todos-express-starter",
+  "homepage": "https://github.com/mailchain/todos-express-mailchain",
   "repository": {
     "type": "git",
-    "url": "git://github.com/passport/todos-express-starter.git"
+    "url": "git://github.com/mailchain/todos-express-mailchain.git"
   },
   "bugs": {
-    "url": "https://github.com/passport/todos-express-starter/issues"
-  },
-  "funding": {
-    "type": "github",
-    "url": "https://github.com/sponsors/jaredhanson"
+    "url": "https://github.com/mailchain/todos-express-mailchain/issues"
   },
   "license": "Unlicense",
   "scripts": {
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "@mailchain/sdk": "^0.15.1",
+    "connect-sqlite3": "^0.9.13",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "dotenv": "^8.6.0",
     "ejs": "~2.6.1",
     "express": "~4.16.1",
+    "express-session": "^1.17.3",
     "http-errors": "~1.6.3",
     "mkdirp": "^1.0.4",
     "morgan": "~1.9.1",
+    "passport": "^0.6.0",
+    "passport-magic-link": "^2.1.0",
     "pluralize": "^8.0.0",
     "sqlite3": "^5.0.2"
   }
