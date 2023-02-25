@@ -25,7 +25,7 @@ let createMailchainAddress = function (address) {
 passport.use(
   new MagicLinkStrategy(
     {
-      secret: "keyboard cat", // change this to something secret
+      secret: process.env.SECRET_PASSPORT_SESSION_KEY,
       userFields: ["mailchain_address"],
       tokenField: "token",
       verifyUserAfterToken: true,
@@ -47,7 +47,6 @@ passport.use(
             '">Sign in</a></p>',
         },
       };
-      console.log(msg);
       return await mailchain.sendMail(msg);
     },
     function verify(user) {
