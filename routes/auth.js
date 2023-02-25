@@ -7,7 +7,7 @@ var router = express.Router();
 var mailchain = Mailchain.fromSecretRecoveryPhrase(
   process.env.SECRET_RECOVERY_PHRASE
 );
-var fromAddress = process.env["FROM_ADDRESS"] || mailchain.user().address;
+
 let createMailchainAddress = function (address) {
   switch (address) {
     case address.match(/^[\d\w\-\_]*@mailchain\.com$/)?.input: // Mailchain address:
@@ -32,10 +32,10 @@ passport.use(
     },
     async function send(user, token) {
       var link = "http://localhost:3000/login/mailchain/verify?token=" + token;
-
+      var sender = await mailchain.user();
       var msg = {
         to: [createMailchainAddress(user.mailchain_address)],
-        from: fromAddress,
+        from: sender.address,
         subject: "Sign in to Todos",
         content: {
           text:
@@ -47,6 +47,7 @@ passport.use(
             '">Sign in</a></p>',
         },
       };
+      console.log(msg);
       return await mailchain.sendMail(msg);
     },
     function verify(user) {
