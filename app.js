@@ -27,7 +27,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(
   session({
-      secret: 'keyboard cat',
+      secret: process.env.SECRET_PASSPORT_SESSION_KEY,
       resave: false,
       saveUninitialized: false,
       store: new SQLiteStore({ db: 'sessions.db', dir: './var/db' }),
